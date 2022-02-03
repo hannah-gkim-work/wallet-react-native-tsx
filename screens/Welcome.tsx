@@ -9,6 +9,7 @@ import background from "./../assets/bgs/background_v1.png";
 //custom components
 import BigText from "../components/Texts/BigText";
 import SmallText from "../components/Texts/SmallText";
+import RegularButton from "../components/Buttons/RegularButton";
 
 const Welcome: FunctionComponent = () => {
   return (
@@ -25,6 +26,7 @@ const Welcome: FunctionComponent = () => {
           <SmallText textStyles={{ width: "70%", marginBottom: 25 }}>
             Best payment method, connects your money to your friends, family
           </SmallText>
+          <RegularButton onPress={() => {}}>Get Started</RegularButton>
         </BottomSection>
       </WelcomeContainer>
     </>
@@ -54,4 +56,5 @@ const BottomSection = styled.View`
   width: 100%;
   padding: 25px;
   flex: 1;
+  justify-content: flex-end;
 `;
